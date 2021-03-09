@@ -1,0 +1,191 @@
+<html>
+<head>
+<title> PERIODS(CHEMISTRY) </title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: black;
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 600px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+body {
+  background-image: url('im.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body {
+margin: 10px;
+padding: 10px;
+border: 5px solid #000000;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width : 10%;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+
+.copyright {
+
+    text-align: center;
+}
+
+.social {
+
+    text-align: center;
+
+}
+</style>
+
+</head>
+<body>
+<marquee style="font-family:Book Antiqua; color: #FFFFFF" bgcolor="#000080" scrollamount="7" loop="infinite">FREE MOCK TESTS AVAILABLE!!!!</marquee>
+<h1><center> PERIODS(ROW)</center></h1>
+<img src="adds1.jpg" alt="Delivery at your Door step" width="200" height="500" style="float:right">
+<h1>BASIC DEFINATION OF PERIODS:<h1>
+<p style="font-size:25px">A period in the periodic table is a row of chemical elements. All elements in a row have the same number of electron shells.Each next element in a period has one more <br>proton and is less
+ metallic than its predecessor. Arranged this way, groups of elements in the same column have similar chemical and physical properties, reflecting the periodic law. For example, the halogens lie in
+the second-last column (group 17) and share similar properties, such as high reactivity and the tendency to gain one electron to arrive at a noble-gas electronic configuration As of 2016, a total of
+ 118 elements have been discovered and confirmed. </p>
+<p style="font-size:25px">Modern quantum mechanics explains these periodic trends in properties in terms of electron shells. As atomic number increases, shells fill with electrons in approximately the order 
+shown at right. The filling of each shell corresponds to a row in the table.In the s-block and p-block of the periodic table, elements within the same period generally do not exhibit  similarity across periods.</p>
+<p style="font-size:25px"> There are 8 groups present in the periodical table:</p>
+<ol type="1">
+  <li> PERIOD 1</li>
+  <li>PERIOD 2</li>
+  <li>PERIOD 3</li>
+<li>PERIOD 4</li>
+<li>PERIOD 5</li>
+<li>PERIOD 6</li>
+<li>PERIOD 7</li>
+<li>PERIOD 8</li>
+</ol> 
+
+ <a href="frame.html">for further information..click here</a> 
+<button class="open-button" onclick="openForm()">Chat</button>
+<div class="chat-popup" id="myForm">
+  <form action="chat.html" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<h1 style="font-size:25px"> TO GET YOUR DOUBT CLARIFIED ON THE SPOT YOU CAN CHAT WITH OUR ADVISOR ..... </h1>
+<div class="footer">
+<img src="twitter.webp"  alt="PERIODIC TABLE" width="100" height="50"/>
+<br>
+<h3 class="copyright"><small style="font-size: 15px">&copy; Copyright 2020, A.S.L. MANASA</small></h3>
+<h3 class="social"> for any queries post on :<br><br> www.chempro@gmail.com</h3>
+</div>
+</body>
+</html>

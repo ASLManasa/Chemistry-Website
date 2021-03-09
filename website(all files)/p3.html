@@ -1,0 +1,88 @@
+<html>
+<head>
+<title> p1 </title>
+<style>
+body {
+  background-color:#00FF00;
+}
+body { font-size: 75%; }
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body>
+<h1> <center> PERIOD 3 </center> <h1>
+<hr>
+<p>A period 3 element is one of the chemical elements in the third row (or period) of the periodic table of the chemical elements.
+ The periodic table is laid out in rows to illustrate recurring (periodic) trends in the chemical behaviour of the elements as their atomic number increases: 
+a new row is begun when the periodic table skips a row and a chemical behaviour begins to repeat, meaning that elements with similar behavior fall into the
+ same vertical columns. The third period contains eight elements: sodium, magnesium, aluminium, silicon, phosphorus, sulfur, chlorine, and argon. The first two, sodium and magnesium, 
+are members of the s-block of the periodic table, while the others are members of the p-block. All of the period 3 elements occur in nature and have at least one
+<div class="popup" onclick="myFunction()"><u>stable isotope</u>
+  <span class="popuptext" id="myPopup">The term stable isotope has a meaning similar to stable nuclide.</span>
+</div>
+
+<script style="font-size:25px">
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+</p>
+</body>
+</html>
